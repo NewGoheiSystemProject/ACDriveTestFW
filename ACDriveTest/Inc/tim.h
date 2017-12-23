@@ -65,6 +65,7 @@ void MX_TIM1_Init(void);
 void StartTIM1();
 void StopTIM1();
 void IRQAttachTIM1(void (*callBack)());
+void SetPeriodTIM1(int period);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

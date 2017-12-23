@@ -155,6 +155,14 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 		}
 	}
 }
+void SetPeriodTIM1(int period)
+{
+	htim1.Init.Period = period;
+	if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
+	{
+		_Error_Handler(__FILE__, __LINE__);
+	}
+}
 /* USER CODE END 1 */
 
 /**
